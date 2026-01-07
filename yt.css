@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-left: 85px;
+    padding-right: 15px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    margin: 0px;
+}
+.thumbnail-row{
+    margin-bottom: 8px;
+    position: relative;
+}
+.video-preview{
+
+}
+.thumbnail{
+    width: 100%;
+    border-radius: 5px;
+}
+.video-title{
+    width: 100%;
+    margin-bottom: 10px;
+    line-height:18px;
+}
+.video-author{
+    display: block;
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 5px;
+    color: grey;
+}
+.video-stats{
+    display: block;
+    font-size: 12px;
+    width: 250px;
+    color: grey;
+}
+.channel-picture{
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+}
+.video-info{
+    width: 100%;
+}
+.profile-picture{
+    border-radius: 50px;
+    width: 40px;
+}
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    z-index: 100;
+}
+.left-header{
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        width: 150px;
+        align-items: center;
+}
+.menu{
+    width: 23px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.youtube-logo{
+    width: 90px;
+    cursor: pointer;
+}
+.middle-header{
+        flex: 1;
+        margin-left: 75px;
+        margin-right: 40px;
+        max-width: 500px;
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+        height: 100%;
+}
+.search-bar{
+    flex: 1;
+    height: 39px;
+    padding-left: 10px;
+    font-size: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(186, 186, 186);
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0,0.07);
+    width: 0;
+}
+.search-bar::placeholder{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+.search-button{
+   width: 60px;
+   height: 39px;
+   background-color: rgb(240, 240, 240);
+   border-width: 1px;
+   border-style: solid;
+   border-color: rgb(186, 186, 186);
+   margin-left: -1px;
+   margin-right: 10px;
+}
+.search-logo{
+    height: 25px;
+    margin-top: 3px;
+    cursor: pointer;;
+}
+.voice-search-button{
+    background-color:rgb(240, 240, 240) ;
+    width: 38px;
+    height: 38px;
+    border-radius: 19px;
+    border: none;
+    cursor: pointer;
+}
+.voice-search-logo{
+    height: 23px;
+    margin-top: 3px;
+}
+.right-header{
+        width: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 10px;
+        flex-shrink: 0;
+}
+.upload-icon{
+    height: 25px;
+    cursor: pointer;
+}
+.youtube-apps-icon{
+    height: 25px;
+    cursor: pointer;
+}
+.notifications-icon{
+    height: 25px;
+    cursor: pointer;
+}
+.my-channel-img{
+    height: 34px;
+    border-radius: 17px;
+    cursor: pointer;
+}
+.side-bar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    width: 70px;
+    background-color: white;
+    border-right-style: solid;
+    border-right-color: rgb(230, 230, 230);
+    border-right-width: 1px;
+    z-index: 200;
+}
+.side-bar-link{
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.side-bar-link:hover{
+    background-color: rgb(240, 240, 240);
+}
+.side-bar-link img{
+    width: 27px;
+    margin-bottom: 3px;
+}
+.side-bar-link div{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+
+}
+.video-timeline{
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    padding:2px 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.notifications-container{
+    position: relative;
+}
+.notifications-count{
+    position: absolute;
+    background-color: rgb(200, 0, 0);
+    right: -3px;
+    top: -1px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-radius: 50%;
+}
+
+@media (max-width:500px) {
+    body{
+        padding-left: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .left-header{
+        width: 30%;
+    }
+    .youtube-logo{
+        width: 80px;
+    }
+    .middle-header{
+        margin: 0;
+        margin-right: 15px;
+    }
+    .right-header{
+        width: 10%;
+        margin-right: 5%;
+    }
+    .upload-icon,.youtube-apps-icon,.notifications-icon{
+        display: none;
+    }
+    .notifications-count{
+        display: none;
+    }
+    .youtube-logo{
+        margin-left: 30%;
+    }
+    .video-grid{
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+    .side-bar{
+        position: fixed;
+        top: calc(100% - 70px);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid rgb(230, 230, 230);
+    }
+}
+@media (min-width:501px) and (max-width:850px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:851px) and (max-width:1350px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1500px) {
+    .video-grid{
+        grid-template-columns: repeat(4,1fr);
+    }    
+}
